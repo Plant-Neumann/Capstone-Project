@@ -93,7 +93,7 @@ def get_entry(entry_id: int):
         WHERE id = ?
     """, (entry_id,))
     entry = cursor.fetchone()
-    conn.close
+    conn.close()
     return entry 
 
 def main():
